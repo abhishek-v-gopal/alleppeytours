@@ -358,6 +358,19 @@ h6 {
   }
 }
 
+.subtitle{
+  color: white;
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+#why-us .section-subtitle h5,
+#why-us .section-subtitle p,
+#why-us > .mt-5 h5,
+#why-us > .mt-5 p {
+  color: #fff !important;
+}
 .box1{
   background-color: white;
   height: inherit;

@@ -179,6 +179,7 @@ h6 {
   z-index: 997; 
   padding: 15px 0;
   top: 40px;
+  height: auto;
 }
 
 #header.header-scrolled {
@@ -214,9 +215,9 @@ h6 {
   color: #fff;
 }
 
-#header .logo img {
+/* #header .logo img {
   max-height: 40px;
-}
+} */
 
 /*--------------------------------------------------------------
 # Book a table button Menu
@@ -383,6 +384,26 @@ h6 {
 /**
 * Mobile Navigation 
 */
+/* Desktop navbar centering */
+@media (min-width: 992px) {
+  .navbar {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/* Mobile Navigation */
+/* Desktop navbar centering */
+@media (min-width: 992px) {
+  .navbar {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/* Mobile Navigation */
 .mobile-nav-toggle {
   color: #fff;
   font-size: 28px;
@@ -390,15 +411,15 @@ h6 {
   display: none;
   line-height: 0;
   transition: 0.5s;
-  position:relative;
-  align-items: flex-end;
-  right: 100%;
-  /* left: 0; */
 }
 
 @media (max-width: 991px) {
   .mobile-nav-toggle {
     display: block;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
   }
 
   .navbar ul {
@@ -422,6 +443,7 @@ h6 {
   position: absolute;
   top: 15px;
   right: 15px;
+  transform: none;
 }
 
 .navbar-mobile ul {
@@ -489,7 +511,6 @@ h6 {
 .navbar-mobile .dropdown>.dropdown-active {
   display: block;
 }
-
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
